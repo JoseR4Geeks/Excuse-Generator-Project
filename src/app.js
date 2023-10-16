@@ -13,18 +13,29 @@ window.onload = () => {
 };
 
 let generateExcuse = () => {
+
   let pronoun = ["A", "The"];
+// Excuses
   let subject = ["jogger", "racoon", "dog", "driver", "cat", "woman"];
+
   let action = ["took my", "threw my", "burned my", "stole my", "bit my"];
+
   let where = ["on the street.", "in my house.", "in my driveway."];
+
   let possetion = ["homework", "project", "car", "shirt"];
 
+  // Randomizer
   let proIndx = Math.floor(Math.random() * pronoun.length);
+
   let subjIndx = Math.floor(Math.random() * subject.length);
+
   let actionIndex = Math.floor(Math.random() * action.length);
+
   let whereIndex = Math.floor(Math.random() * where.length);
+
   let possetionIndex = Math.floor(Math.random() * possetion.length);
 
+  
   return (
     pronoun[proIndx] +
     " " +
